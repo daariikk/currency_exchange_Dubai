@@ -1,0 +1,295 @@
+@import "resets.scss"
+@import "normalizez.scss"
+
+$color-black: #333333
+$color-blue: #1C69DB
+$color-gray: #8F97B8
+
+@font-face
+    font-family: "Roboto"
+    src: url('../fonts/Roboto-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+@font-face
+    font-family: "Roboto"
+    src: url('../fonts/Roboto-Bold.ttf')
+    font-weight: bold
+    font-style: normal
+
+*
+    box-sizing: border-box
+
+html
+    font-family: "Roboto"
+
+.container
+    position: relative
+    max-width: 1140px
+    margin: 0 auto
+
+a
+    text-decoration: none
+
+.main-section
+    background-image: url("../img/section-1-background.svg")
+    &__container
+        min-height: 800px
+    &__navigation
+        display: flex
+        justify-content: space-between
+    &__main-sector
+        display: flex
+
+.navigation
+    &__container
+        margin-bottom: 120px
+        display: flex
+        justify-content: space-between
+
+.nav
+    &__button
+        border: none
+        border-radius: 500px
+        font-size: 14px
+        color: #fff
+        padding: 14px
+        img
+            width: 14px
+            margin-right: 7px
+            position: relative
+            top: 2px
+        &--blue
+            background: #39AFF1
+            margin-right: 12px
+        &--green
+            background: #58DB63
+    &__menu
+        margin-top: 25px
+        display: flex
+        justify-content: space-around
+    &__menu-item
+        margin-right: 60px
+        font-weight: 700
+        color: $color-black
+        &--logo
+            color: $color-blue
+            text-transform: uppercase
+    &__menu-item:last-child
+        margin: 0
+    &__contacts
+        display: flex
+        justify-content: space-around
+        margin-top: 15px
+
+.main-sector
+    &__header
+        color: $color-black
+        font-weight: 700
+        font-size: 75px
+        margin: 0 0 20px 0
+    &__text
+        font-size: 26px
+        font-weight: 400
+        margin: 0 0 35px 0
+        color: $color-black
+    &__button
+        display: inline-block
+        padding: 30px 60px
+        border: none
+        background: linear-gradient(93.33deg, #396DF1 1.15%, #3951A7 100%)
+        border-radius: 50px
+        color: #fff
+        font-weight: 700px
+    &__left-wrapper
+        width: 50%
+    &__right-wrapper
+        width: 50%
+        position: relative
+    &__buttons
+        display: flex
+        justify-content: space-between
+    &__currency-box
+        width: 460px
+        height: 338px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        position: absolute
+        bottom: -40px
+        right: 0
+    &__currency-item
+        height: 77px
+        width: 460px
+        border-radius: 20px
+        border: 1px solid #DEE6F4
+        background: rgba(255, 255, 255, 0.8)
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        color: #DEE6F4
+
+.currency-item
+    &__img
+        display: flex
+        align-items: center
+        color: $color-blue
+        &--currency
+            margin-right: 3px
+        &--arrow
+            margin: 0 11px 0 11px
+    &__hug
+        display: flex
+        align-items: center
+        background: #E9F0FE
+        padding: 4px
+        border-radius: 100px
+    &__value
+        color: $color-blue
+        font-weight: bold
+
+.about-section
+    &__container
+        min-height: 1000px
+    &__left-wrapper
+        width: 50%
+    &__right-wrapper
+        width: 50%
+    &__header
+        font-size: 50px
+        font-weight: 700
+        color: $color-black
+        margin-bottom: 12px
+    &__text
+        font-size: 18px
+        line-height: 26px
+        color: $color-black
+        &--small
+            font-size: 14px
+            line-height: 20px
+        a
+            color: $color-black
+            text-decoration: underline
+    &__buttons
+        display: flex
+        justify-content: space-between
+        margin-top: 70px
+    &__button-item
+        width: 30%
+        height: 230px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly
+        background: #F1F6FF
+        border-radius: 20px
+    &__button
+        padding: 11px 42px
+        background: linear-gradient(93.33deg, #396DF1 1.15%, #3951A7 100%)
+        border-radius: 50px
+        color: #fff
+        font-size: 18px
+
+.button-item
+    &__text
+        line-height: 26px 
+        font-size:  18px
+        color: $color-black
+        width: 85%
+        text-align: center
+
+.current-course-section
+    &__container
+        min-height: 500px
+    &__header
+        line-height: 58px
+        font-size: 50px
+        color: $color-black
+        font-weight: 700
+        margin-bottom: 40px
+        width: 385px
+        position: relative
+        span
+            padding: 8px 12px
+            border: 1px solid $color-gray
+            border-radius: 50px
+            line-height: 20px
+            font-size: 14px
+            color: $color-gray
+            position: absolute
+            left: 115px
+            bottom: 3px
+
+.calc-section
+    &__container
+        min-height: 500px
+        display: flex
+    &__left-wrapper
+        width: 33%
+    &__right-wrapper
+        width: 66%
+    &__header
+        font-size: 50px
+        font-weight: 700
+        line-height: 58px
+        color: $color-black
+        margin-bottom: 12px
+    &__text
+        font-size: 18px
+        line-height: 26px
+        color: $color-black
+        margin-bottom: 62px
+        &--small
+            font-size: 14px
+            line-height: 20px
+            color: $color-gray
+        &--bold
+            text-align: center
+            line-height: 14.4px
+            font-size: 12px
+            font-weight: 700
+            color: #8F97B8
+            a
+                color: #5096FF
+
+.contacts-section
+    &__container
+        min-height: 400px
+    &__frame
+        background: linear-gradient(93.58deg, #589AFE 0%, #1C69DB 100%)
+        height: 230px
+        border-radius: 20px
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+    &__frame-item
+        width: 28%
+        button
+            background: #fff
+            border: none
+            border-radius: 50px
+            padding: 30px 68px
+            color: #1C69DB
+            font-weight: 700
+    &__header
+        font-size: 35px
+        font-weight: 700
+        line-height: 45px
+        color: #fff
+        span
+            text-decoration: underline
+    &__text
+        font-size: 18px
+        line-height: 26px
+        color: #fff
+
+.footer
+    position: relative
+    &__background
+        min-height: 250px
+        background: #293444
+    &__container
+        position: absolute
+        top: 0
+        z-index: 1
+
